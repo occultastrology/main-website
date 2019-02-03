@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  font-family: Montserrat;
+  font-size: 24px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+#Title {
+  font-size: 50px;
+}
+
+#tag {
+  color: white;
+  opacity: 0.6;
+  font-size: 23px;
+  font-weight: 100;
+  padding-bottom: 0;
+  padding-left: 20px;
+  margin-bottom: 3px;
+}
+
+.horus {
+  font-weight: 100;
+}
+
+main {
+  text-align: center;
+  background-color: #01063F;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box {
+  height: 50%;
+  width: 100%;
+  position: relative;
+}
+
+.box h1 {
+  font-size: 28px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.box p {
+  font-size: 16px;
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px 0 20px;
+}
+
+.box ul {
+  font-size: 14px;
+  padding-top: 30px;
+  padding-left: 20px;
+  width: 85%;
+  margin: 0 auto;
+  display: none;
+}
+
+.box ul li {
+  padding: 3px 0;
+}
+
+
+#question{
+  background-image: url('./images/questionmark.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+#money {
+  background-image: url('./images/Cash-512.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 120px;
+  width: 100%;
+}
+
+#papers {
+  background-image: url('./images/Papers.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+  width: 100%;
+}
+
+#love {
+  background-image: url('./images/venus-M.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 105px;
+  margin-bottom: 10px;
+}
+
+#box1{
+  background: #D8EEFB;
+  color: #2488BD;
+}
+#box2{
+  background-color: #D8FBED;
+  color: #6EBA9D;
+}
+#box3{
+  background-color: #FFF2D0;
+  color: #E4B895;
+}
+#box4{
+  background: #FDDEFB;
+  color: #BC81B9;
+}
+
+aside {
+  display: flex;
+  width: 70%;
+}
+
+aside div {
+  font-weight: 100;
+  width: 100%;
+}
+
+input[type='submit'] {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.box form {
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+
+#info {
+  width: 300px;
+  height: 150px;
+}
+
+.flex {
+  display: flex;
+}
+
+
+@media screen and (max-width: 1150px){
+
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box h1 {
+    padding-top: 80px;
+  }
+
+  .box ul {
+    display: none;
+  }
+
+  main {
+    width: 100%;
+    height: 210px;
+  }
+  aside {
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+@media screen and (max-width: 800px){
+  aside {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 400px;
+  }
+
+  .box h1 {
+    padding-top: 30px;
+  }
+
+}
+
+@media screen and (max-width: 480px){
+
+  main {
+    width: 100%;
+    height: 350px;
+  }
+
+  .box h1 {
+    padding-top: 20px;
+  }
+
+}
