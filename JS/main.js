@@ -1,4 +1,4 @@
-
+'use strict'
 // Auto resize input
 function resizeInput() {
     $(this).attr('size', $(this).val().length);
@@ -67,3 +67,39 @@ console.clear();
   }
 
 })();
+
+
+let boxes  = document.getElementsByClassName('box');
+let hidden = document.getElementsByClassName('hidden');
+
+function HOVER() {
+  let box  = this.getElementsByClassName('hidden')
+  let text = this.getElementsByClassName('text')
+
+
+  box[0].classList.remove('hidden')
+  text[0].classList.add('hidden')
+}
+
+function unHOVER() {
+  let box = this.getElementsByTagName('ul')
+  let text = this.getElementsByClassName('text')
+
+
+  box[0].classList.add('hidden')
+  text[0].classList.remove('hidden')
+
+}
+
+
+boxes[0].addEventListener('mouseover', HOVER);
+boxes[1].addEventListener('mouseover', HOVER);
+boxes[2].addEventListener('mouseover', HOVER);
+boxes[3].addEventListener('mouseover', HOVER);
+
+
+
+boxes[0].addEventListener('mouseleave', unHOVER);
+boxes[1].addEventListener('mouseleave', unHOVER);
+boxes[2].addEventListener('mouseleave', unHOVER);
+boxes[3].addEventListener('mouseleave', unHOVER);
